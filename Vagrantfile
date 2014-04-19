@@ -10,5 +10,5 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--memory", 2048]
   end
 
-  config.vm.provision "shell", path: "docker.sh"
+  config.vm.provision "shell", path: "scripts/docker.sh"
 end
